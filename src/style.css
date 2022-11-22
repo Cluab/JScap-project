@@ -1,0 +1,17 @@
+.nav{
+    background-color: black;
+    padding: 1rem;
+}
+.nav-item a{
+    color: red;
+    transition: ease-in-out .5s;
+}
+.nav-item a:hover{
+    color: white;
+}
+.card-section{
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    grid-template-rows: 50% 50%;
+    row-gap:10px;
+}
