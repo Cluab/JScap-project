@@ -4,6 +4,7 @@ export default class AddMovies {
     this.likes = likes;
   }
 
+  // this function is for adding shows to the website
   static addlist = (list) => {
     const shows = document.getElementById('show-cards');
     const container = document.createElement('div');
@@ -15,16 +16,16 @@ export default class AddMovies {
     container.classList.add('card');
     container.setAttribute('style', 'width: 18rem;');
     showImg.classList.add('card-img-top');
-    showImg.src = list.show.image.medium;
+    showImg.src = `${list.show}`;
     showImg.alt = 'show image';
     cardHouse.classList.add('card-body');
     title.classList.add('card-title');
-    title.innerText(list.show.name);
+    title.innerText = list.show;
     description.classList.add('card-text');
-    description.innerText(list.show.summary);
+    description.innerText = list.show;
     button.classList.add('btn', 'btn-primary');
-    button.href = list.show.url;
-    button.innerText('more information');
+    button.href = list.show;
+    button.innerText = 'more information';
     cardHouse.appendChild(title);
     cardHouse.appendChild(description);
     cardHouse.appendChild(button);

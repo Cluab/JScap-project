@@ -1,5 +1,5 @@
 import AddMovies from './add';
-class Get {
+export default class Get {
   static getShows = async () => {
     const shows = [];
     const options = { method: 'GET' };
@@ -16,5 +16,3 @@ class Get {
     AddMovies.addlist(shows);
   };
 }
-
-Get.getShows();
