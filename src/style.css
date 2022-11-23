@@ -5,7 +5,8 @@ body{
     flex-direction: column;
     font-family:'Dosis', sans-serif;
     background-image: url(./items/noom-peerapong-2uwFEAGUm6E-unsplash\ 1.png);
-    background-size: contain;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .nav{
@@ -31,14 +32,65 @@ body{
 
 .main-content{
     margin-top: 8rem;
+    text-align: center;
+    padding: 2rem;
 }
-.main-content  p{
+.main-content p{
     font-family: 'Rubik Glitch', cursive;
     text-align: center;
+    margin-left: 2rem;
     font-size: 3rem;
-    color: white;
+    text-transform: uppercase;
+    background-image: linear-gradient(
+      -225deg,
+      white 0%,
+      black 12%,
+      red 29%,
+      #A15F46 67%,
+      white 80%,
+      white 100%
+    );
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 6s linear infinite;
+    display: inline-block;
+  }
+  
+  @keyframes textclip {
+    to {
+      background-position: 200% center;
+    }
+  }
+.popup-coments-wrapper{
+    background: rgba(0, 0, 0, 0.5);
+    position:fixed;
+    top: 0;
+    left:0;
+    width:100%;
+    height: 100%;
+    z-index:200;
+}
+.popup-close{
+    position: absolute;
+    top: 5%;
+    z-index: 500;
+    left: 75%;
+    font-size:30px;
+    font-weight:bold;
+    color: black;
 }
 
+.pop-up-contents{
+    max-width:800px;
+    margin: 2% auto;
+    padding: 20px;
+    position: relative;
+}
 
 
 .card-section{
@@ -48,11 +100,8 @@ body{
     gap:10px;
     justify-content: space-between;
     padding: 3rem;
-    margin-top: 1rem;
+    margin-top: .5rem;
     margin-bottom: 12rem;
-}
-.card-body{
-    background-image: url(./items/Rectangle\ 1.png);
 }
 .likes p{
     display: flex;
@@ -76,6 +125,109 @@ body{
     padding: .5rem;
 }
 
+.about{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-bottom: 12rem;
+    background-color: white;
+    margin-bottom: 8rem;
+}
+.about-us{
+    padding: 8rem;
+    border: solid black 2px;
+    border-radius: 6px;
+    margin: 3rem;
+    text-align: center;
+    font-family: inherit;
+    font-size: 30px;
+
+}
+.about-team{
+    font-family: 'Rubik Glitch', cursive;
+    text-align: center;
+    /* margin-left: 2rem; */
+    font-size: 3rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    background-image: linear-gradient(
+      -225deg,
+      white 0%,
+      black 12%,
+      red 29%,
+      #A15F46 67%,
+      white 80%,
+      white 100%
+    );
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 6s linear infinite;
+    display: inline-block;
+}
+
+.cards-bio{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    top: 245%;
+    left: 27%;
+}
+.bio-card{
+    padding: 3rem;
+
+}
+.contact-us{
+    background-image: url(./items/contact-back.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-bottom: 2px solid red;
+    font-size: 40px;
+}
+.contact-us > p{
+    text-align: center;
+    color: white;
+    font-weight: 40px;
+    letter-spacing: 4px;
+}
+.profiles{
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+    padding: 3rem;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.people{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.people a{
+    text-decoration: none;
+    color: red;
+    font-weight: bold;
+    text-decoration: underline;
+}
+.people p{
+color: white;
+}
+.profile-name{
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    
+}
 .footer > p{
     color: white;
     text-align: center;
