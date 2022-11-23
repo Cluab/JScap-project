@@ -1,3 +1,4 @@
+import PostLikes from './postLikes';
 export default class AddMovies {
   constructor(show, likes) {
     this.show = show;
@@ -5,7 +6,7 @@ export default class AddMovies {
   }
 
   // this function is for adding shows to the website
-  static addlist = (list) => {
+  static addlist = (list, id) => {
     // creating html elements and getting the section id
     const shows = document.getElementById('show-cards');
     const container = document.createElement('div');
@@ -17,6 +18,9 @@ export default class AddMovies {
     const likesHouse = document.createElement('div');
     const likesP = document.createElement('p');
     const count = 0;
+    const icon = document.createElement('i');
+    const num = document.createElement('span');
+    const likeText = document.createElement('span');
 
     // adding classes to different elements
 
@@ -28,6 +32,7 @@ export default class AddMovies {
     likesHouse.classList.add('likes');
     button.classList.add('btn', 'btn-primary');
     container.setAttribute('style', 'width: 100%;');
+    icon.classList.add('fa-regular', 'fa-heart');
 
     // assigning api variables to deferent elements
 
@@ -37,12 +42,17 @@ export default class AddMovies {
     let sum = list.summary;
     sum = sum.replace(/^"(.*)"$/, '$1');
     description.innerHTML = `${sum}`;
-    likesP.innerHTML = `<i class="fa-regular fa-heart"></i>likes <span>${count}</span>`;
+    likeText.innerText = 'likes';
+    icon.addEventListener('click', () => {
+      PostLikes.likecolor(icon, count, num);
+    });
     button.href = list.show;
     button.innerText = 'comments';
 
     // appending elements with each other
-
+    likesP.appendChild(icon);
+    likesP.appendChild(likeText);
+    likesP.appendChild(num);
     likesHouse.appendChild(likesP);
     cardHouse.appendChild(title);
     cardHouse.appendChild(description);
