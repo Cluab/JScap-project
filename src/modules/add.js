@@ -43,8 +43,10 @@ export default class AddMovies {
     sum = sum.replace(/^"(.*)"$/, '$1');
     description.innerHTML = `${sum}`;
     likeText.innerText = 'likes';
+    PostLikes.likeupdate(id, num);
     icon.addEventListener('click', () => {
-      PostLikes.likecolor(icon, count, num);
+      PostLikes.likecolor(icon);
+      PostLikes.likeupdate(id, num);
     });
     button.href = list.show;
     button.innerText = 'comments';

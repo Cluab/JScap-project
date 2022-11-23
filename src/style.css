@@ -67,6 +67,7 @@ body{
     }
   }
 .popup-coments-wrapper{
+    display: none;
     background: rgba(0, 0, 0, 0.5);
     position:fixed;
     top: 0;
@@ -188,6 +189,8 @@ body{
     left: 27%;
 }
 .bio-card{
+    
+    display: none;
     padding: 3rem;
 
 }
