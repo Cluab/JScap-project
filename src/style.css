@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300;500&family=Rubik+Glitch&display=swap');
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family:'Dosis', sans-serif;
+    background-image: url(./items/noom-peerapong-2uwFEAGUm6E-unsplash\ 1.png);
+    background-size: contain;
+}
+
+.nav{
+    background-color: rgba(0, 0, 0, 0.876);
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    margin-bottom: 2rem;
+    border-radius: 4px;
+    border: solid 2px re;
+
+
+}
+.nav-item a{
+    color: white;
+    transition: ease-in-out .5s;
+    font-size: 20px;
+}
+.nav-item a:hover{
+    color: red;
+}
+
+.main-content{
+    margin-top: 8rem;
+}
+.main-content  p{
+    font-family: 'Rubik Glitch', cursive;
+    text-align: center;
+    font-size: 3rem;
+    color: white;
+}
+
+
+
+.card-section{
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    grid-template-rows: 50% 50%;
+    gap:10px;
+    justify-content: space-between;
+    padding: 3rem;
+    margin-top: 1rem;
+    margin-bottom: 12rem;
+}
+.card-body{
+    background-image: url(./items/Rectangle\ 1.png);
+}
+
+.card-text {
+    max-height: 300px;
+    white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+;
+}
+.likes p{
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+}
+.btn{
+    background: red;
+    color: white;
+}
+.btn:hover{
+    background: white;
+    color: red;
+}
+.footer{
+    margin-bottom: auto;
+    position: fixed;
+    bottom: 0%;
+    background-color: black;
+    width: 100%;
+    padding: .5rem;
+}
+
+.footer > p{
+    color: white;
+    text-align: center;
+    font-size: 20px;
+
+}
