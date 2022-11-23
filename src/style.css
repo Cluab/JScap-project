@@ -54,6 +54,14 @@ body{
 .card-body{
     background-image: url(./items/Rectangle\ 1.png);
 }
+
+.card-text {
+    max-height: 300px;
+    white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+;
+}
 .likes p{
     display: flex;
     flex-direction: row;
