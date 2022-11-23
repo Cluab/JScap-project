@@ -11,7 +11,7 @@ export default class Get {
       const apperlist = async () => {
         await fetch(`https://api.tvmaze.com/shows/${id}`, options)
           .then((res) => res.json())
-          .then((data) => AddMovies.addlist(data));
+          .then((data) => AddMovies.addlist(data, id));
       };
       apperlist();
     });
