@@ -1,4 +1,5 @@
-import PostLikes from './postLikes';
+import PostLikes from './postLikes.js';
+
 export default class AddMovies {
   constructor(show, likes) {
     this.show = show;
@@ -17,7 +18,6 @@ export default class AddMovies {
     const button = document.createElement('a');
     const likesHouse = document.createElement('div');
     const likesP = document.createElement('p');
-    const count = 0;
     const icon = document.createElement('i');
     const num = document.createElement('span');
     const likeText = document.createElement('span');
@@ -43,11 +43,6 @@ export default class AddMovies {
     sum = sum.replace(/^"(.*)"$/, '$1');
     description.innerHTML = `${sum}`;
     likeText.innerText = 'likes';
-    PostLikes.likeupdate(id, num);
-    icon.addEventListener('click', () => {
-      PostLikes.likecolor(icon);
-      PostLikes.likeupdate(id, num);
-    });
     button.href = list.show;
     button.innerText = 'comments';
 
@@ -63,5 +58,12 @@ export default class AddMovies {
     container.appendChild(showImg);
     container.appendChild(cardHouse);
     shows.appendChild(container);
+
+    // added like feature to specific show
+    PostLikes.likeupdate(id, num);
+    icon.addEventListener('click', () => {
+      PostLikes.likecolor(icon);
+      PostLikes.likeupdate(id, num);
+    });
   };
 }
