@@ -9,26 +9,165 @@
   <title>Document</title>
 <script defer src="runtime.js"></script><script defer src="main.js"></script></head>
 <body>
-  <nav class="bg-light">
-    <div class="container-fluid  d-flex flex-row justify-content-between">
-      <a class="navbar-brand" href="#">Navbar</a>
-      <div>
-        <ul class="navbar-nav d-flex flex-row justify-content-around">
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="#">Tvshows</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Movies</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contact-Us</a>
-          </li>
+  <ul class="nav justify-content-center">
+    <li class="nav-item">
+      <a class="nav-link active" aria-current="page" href="#">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Contact-Us</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link">About-Us</a>
+    </li>
+  </ul>
+
+  <section class="main-content">
+    <p>Get The Best of new movies</p>
+    <p>On the globe</p>
+
+  </section>
+
+  <section class="card-section">
+    <div class="card" style="width: 100%;">
+      <img src="..." class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <div class="likes">
+          <p><i class="fa-regular fa-heart"></i>likes <span>0</span></p>
+        </div>
+        <a href="#" class="btn btn-comments">Comments</a>
       </div>
     </div>
-  </nav>
-      
-  <footer>
-    <div class="creatersName"><p>created by <span>Ibrahim</span>&<span>Moise</span></p></div>
-  </footer>
+    <div class="card" style="width: 100%;">
+      <img src="..." class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <div class="likes">
+          <p><i class="fa-regular fa-heart"></i>likes <span>0</span></p>
+        </div>
+        <a href="#" class="btn btn-comments">Comments</a>
+      </div>
+    </div>
+    <div class="card" style="width: 100%;">
+      <img src="..." class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <div class="likes">
+          <p><i class="fa-regular fa-heart"></i>likes <span>0</span></p>
+        </div>
+        <a href="#" class="btn btn-comments">Comments</a>
+      </div>
+    </div>
+    <div class="card" style="width: 100%;">
+      <img src="..." class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <div class="likes">
+          <p><i class="fa-regular fa-heart"></i>likes <span>0</span></p>
+        </div>
+        <a href="#" class="btn btn-comments">Comments</a>
+      </div>
+    </div>
+    <div class="card" style="width: 100%;">
+      <img src="..." class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <div class="likes">
+          <p><i class="fa-regular fa-heart"></i>likes <span>0</span></p>
+        </div>
+        <a href="#" class="btn btn-comments">Comments</a>
+      </div>
+    </div>
+    <div class="card" style="width: 100%;">
+      <img src="..." class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <div class="likes">
+          <p><i class="fa-regular fa-heart"></i>likes <span>0</span></p>
+        </div>
+        <a href="#" class="btn btn-comments">Comments</a>
+      </div>
+    </div>
+  </section>
+  <section class="popup-coments-wrapper">
+    <div class="popup-close">X</div>
+    <div class="card pop-up-contents" style="width: 40rem;">
+      <img src="..." class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Movie-title</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <h5 class="card-title">Comments <span>0</span></h5>
+        <div class="coments-table">
+           <p class="date">03/01/23 <span class="name">Alex:</span><span class="comment">I love it</span></p>
+        </div>
+        <div class="form-comment">
+          <h4 class="add-comment-title">add comments</h4>
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+
+        </div>
+        <a href="#" class="btn btn-primary">Comment</a>
+      </div>
+    </div>    
+  </section>
+  <section class="about">
+    <div class="about-us">
+      <p class="para-about">
+      We are the creative and amazing site for streaming the movies.
+      the good thing about us is that you can just comment on one you
+      like you can even provide a like on our sites. you can always check for updates
+      and to let you know you can subscribe to our nes letter. king find the bio of the company members.
+    </p>
+      <p class="about-team">Our Team</p>
+    </div>
+    <div class="cards-bio">
+      <div class="card text-center bio-card" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title">Byiringiro Moise</h5>
+          <p class="card-text">Full stack developper at microverse</p>
+          <a href="#" class="btn btn-primary">check resume</a>
+        </div>
+      </div>
+      <div class="card text-center bio-card" style="width: 18rem;">
+        <div class="card-body ">
+          <h5 class="card-title">Ibrahim suhali alyousef</h5>
+          <p class="card-text">Fullstack developer at microverse</p>
+          <a href="#" class="btn btn-primary">check resume</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="contact-us">
+    <p>You can kindly contact us on the bellow plat forms</p>
+    <div class="profiles">
+      <div class="people">
+        <p class="profile-name">Moise Byiringiro</p>
+            <a href="https://www.linkedin.com/in/moise-byiringiro-8a8ba4142/">LinkedIn account</a>
+            <a class="git-link" href="https://github.com/Moise-code">Github account</a>
+        <p class="email">byiringiromoise53@gmail.com</p>
+      </div>
+      <div class="people">
+        <p class="profile-name">Ibrahim suhail Alyousefi</p>
+          <a href="https://www.linkedin.com/in/ebrahim-al-yousefi-207808237/">LinkedIn account</a>
+          <a href="https://github.com/Cluab">Github account</a>
+        <p class="email">cluab11222@gmail.com</p>
+      </div>
+    </div>
+  </section>
+  <section class="footer">
+    <p>created by Ibrahim and moise</p>
+  </section>
 </body>
 </html>
