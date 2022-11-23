@@ -251,3 +251,7 @@ body {
   text-align: center;
   font-size: 20px;
 }
+
+.non-show {
+  display: none;
+}
