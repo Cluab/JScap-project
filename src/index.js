@@ -3,6 +3,7 @@ import Get from './modules/get.js';
 import Counters from './modules/counters.js';
 import Showsection from './modules/nav.js';
 
+Showsection.showList(); // switch to list section as default.
 document.getElementById('home').addEventListener('click', () => {
   Showsection.showList(); // switch to list section.
 });

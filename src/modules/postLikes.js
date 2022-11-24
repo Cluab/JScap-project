@@ -51,7 +51,7 @@ export default class PostLikes {
     )
       .then((response) => response.json())
       .then((data) => data.forEach((showsLikes) => {
-        if (showsLikes.item_id - 1000 === id - 1000) {
+        if (Number(showsLikes.item_id) === Number(id)) {
           num.innerText = showsLikes.likes;
         }
       }))
