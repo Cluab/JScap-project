@@ -61,10 +61,13 @@ body {
     background-position: 200% center;
   }
 }
+.popupMainCard{
+  width:100%;
+}
 
 .popup-coments-wrapper {
 
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.7);
   position: fixed;
   top: 0;
   left: 0;
@@ -73,21 +76,31 @@ body {
   z-index: 200;
 }
 
-.popup-close {
-  position: absolute;
-  top: 5%;
-  z-index: 500;
-  left: 73%;
+.pointer-event {
   font-size: 30px;
   font-weight: bold;
   color: black;
+  display: flex;
+  justify-content: right;
 }
 
 .pop-up-contents {
-  max-width: 800px;
+  max-width: 700px;
   margin: 2% auto;
   padding: 20px;
-  position: relative;
+  z-index: 300;
+  left:25%;
+  top:5%;
+  position: fixed;
+  height:auto;
+
+}
+
+.card{
+
+}
+.popupCard{
+  max-height:150px;
 }
 
 .card-section {
@@ -99,6 +112,14 @@ body {
   padding: 3rem;
   margin-top: 0.5rem;
   margin-bottom: 12rem;
+}
+.card-img-top{
+  padding:1rem;
+  align-self: center;
+  max-width: 500px;
+  max-height: 500px;
+  border-radius:30px;
+
 }
 
 .card-text {
@@ -227,7 +248,10 @@ body {
   justify-content: space-evenly;
   align-items: center;
 }
-
+.people{
+  display:flex;
+  flex-direction: column;
+}
 .people a {
   text-decoration: none;
   color: white;

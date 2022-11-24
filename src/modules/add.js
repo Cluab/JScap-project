@@ -1,3 +1,4 @@
+import popMovies from "./popup.js";
 export default class AddMovies {
   constructor(show, likes) {
     this.show = show;
@@ -27,7 +28,7 @@ export default class AddMovies {
     description.classList.add('card-text');
     likesHouse.classList.add('likes');
     button.classList.add('btn', 'btn-primary');
-    container.setAttribute('style', 'width: 100%;');
+    container.setAttribute('style', 'max-width: 100%;');
 
     // assigning api variables to deferent elements
 
@@ -51,5 +52,12 @@ export default class AddMovies {
     container.appendChild(showImg);
     container.appendChild(cardHouse);
     shows.appendChild(container);
+
+  // eventListener for pop up window
+
+  button.addEventListener('click', (e) =>{
+    e.preventDefault();
+    popMovies.popWrap(list.image.medium,list.name,sum);
+  })
   };
 }
