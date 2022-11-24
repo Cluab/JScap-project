@@ -74,6 +74,7 @@ body{
     width:100%;
     height: 100%;
     z-index:200;
+    display:none;
 }
 .popup-close{
     position: absolute;
@@ -151,6 +152,12 @@ body{
     font-size: 30px;
 
 }
+.btn{
+    border:none;
+}
+.btn:hover{
+    border:solid red 1px;
+}
 .about-team{
     font-family: 'Rubik Glitch', cursive;
     text-align: center;
@@ -180,15 +187,21 @@ body{
 }
 
 .cards-bio{
-    position: absolute;
     display: flex;
     flex-direction: row;
+    justify-content:center;
+    align-content: center;
     gap: 40px;
     top: 245%;
     left: 27%;
+    margin: 10px auto;
 }
-.bio-card{
-    padding: 3rem;
+.cardTextSize{
+    font-size: 30px;
+    font-weight:bold;
+}
+.hobbies{
+    font-size:20px;
 
 }
 .contact-us{
@@ -223,9 +236,14 @@ body{
 }
 .people a{
     text-decoration: none;
-    color: red;
+    color: white;
     font-weight: bold;
-    text-decoration: underline;
+    transition:ease-in-out .5s;
+}
+.people a:hover{
+letter-spacing: 4px;
+text-decoration: underline;
+
 }
 .people p{
 color: white;

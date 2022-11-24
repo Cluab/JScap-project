@@ -1,5 +1,5 @@
 import AddMovies from './add.js';
-
+import popWrap from './popup.js';
 export default class Get {
   static getShows = async () => {
     // assignees the method to GET
