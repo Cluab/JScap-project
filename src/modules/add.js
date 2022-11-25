@@ -1,11 +1,6 @@
 import PostLikes from './postLikes.js';
 
 export default class AddMovies {
-  constructor(show, likes) {
-    this.show = show;
-    this.likes = likes;
-  }
-
   // this function is for adding shows to the website
   static addlist = (list, id) => {
     // creating html elements and getting the section id
