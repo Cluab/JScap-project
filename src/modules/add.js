@@ -1,4 +1,5 @@
 import popMovies from "./popup.js";
+import PostComments from "./postcomments.js";
 export default class AddMovies {
   constructor(show, likes) {
     this.show = show;
@@ -57,7 +58,7 @@ export default class AddMovies {
 
   button.addEventListener('click', (e) =>{
     e.preventDefault();
-    popMovies.popWrap(list.image.medium,list.name,sum);
+    popMovies.popWrap(list.image.medium,list.name,sum,id);
   })
   };
 }

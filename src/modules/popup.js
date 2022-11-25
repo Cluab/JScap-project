@@ -1,10 +1,11 @@
+import postComments from './postcomments.js'
 export default class popMovies {
   constructor(show, likes) {
     this.show = show;
     this.likes = likes;
   }
 
-  static popWrap = async (image, title, description) => {
+  static popWrap = async (image, title, description, id) => {
     // // creating the popup element
 
 
@@ -16,13 +17,6 @@ export default class popMovies {
     const commentTitle= document.createElement('h5');
     const commentText = document.createElement('p');
     const form = document.createElement('div');
-    const addCommentTitle = document.createElement('h4');
-    const formInfo = document.createElement('div');
-    const inputComment = document.createElement('input');
-    const commentInput = document.createElement('textarea');
-    const commentButton = document.createElement('input');
-
-
 
     const popImg = document.createElement('img');
     const popHouse = document.createElement('div');
@@ -42,11 +36,6 @@ export default class popMovies {
     commentTitle.classList.add('card-title');
     commentText.classList.add('date');
     form.classList.add('form-comment')
-    addCommentTitle.classList.add('add-comment-title');
-    formInfo.classList.add('mb-3');
-    inputComment.classList.add('form-control');
-    commentInput.classList.add('form-control');
-    commentButton.classList.add('btn','btn-primary');
 
     // assigning api variables to deferent elements
     close.innerHTML = `<span>X</span>`
@@ -54,12 +43,17 @@ export default class popMovies {
     popImg.alt = 'image';
     poptitle.innerText = title;
     popdescription.innerHTML = description;
-    commentTitle.innerText += `comments:0`;
-    commentText.innerText = `12/23/2022<span>Moise</span> <span>I love it</span>`;
-    addCommentTitle.innerText =`<h4>add comments</h4>`;
-    inputComment.innerText = `<input type = "text" placeholder="name@example.com">`
-    commentInput.innerText = `<textarea rows="3"></textarea>`;
-    commentButton.innerText= `<input type="submit">Comment</input>`
+    commentTitle.innerHTML = `comments`;
+    commentText.innerHTML = `12/23/2022 <span>${username}</span> <span>${comment}</span>`;
+    form.innerHTML = `<h4 class="add-comment-title">add comments</h4>
+    <div class="mb-3">
+      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+    </div>
+    <div class="mb-3">
+      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+      <button type="submit" class="comment-button">Comment</button>;
+      </div>`;
+ 
     // appending elements with each other
 
     
@@ -68,22 +62,28 @@ export default class popMovies {
     popupContainer.appendChild(close);
     popupContainer.appendChild(popImg);
     popupContainer.appendChild(popHouse);
-    formInfo.appendChild(inputComment);
-    formInfo.appendChild(commentInput);
-    form.appendChild(addCommentTitle);
-    form.appendChild(formInfo);
     popupContainer.appendChild(commentTitle);
     popupContainer.appendChild(commentText);
-    popupContainer.appendChild(commentButton);
     popupContainer.appendChild(form);
     showsPopup.appendChild(popupContainer);
     showsPopup.appendChild(wrapper);
 
     close.addEventListener('click',() =>{
-        console.log('hello man')
         showsPopup.removeChild(popupContainer);
         showsPopup.removeChild(wrapper);
     })
+    form.addEventListener('submit',() =>{
+      console.log('alright');
+      const username = document.querySelector('#exampleFormControlInput1').value;
+      const comment = document.querySelector('#exampleFormControlTextarea1').value;
+      if(username && comment) {
+        postComments.postComment(id,username,comment);
+        form.reset();
+      }
+      
+      
+    })
+
   };
 
 }

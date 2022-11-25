@@ -95,6 +95,21 @@ body {
   height:auto;
 
 }
+.card-title{
+  padding:0rem 1rem;
+}
+.date{
+  padding:0rem 1rem;
+}
+.form-comment{
+  padding:0rem 1rem;
+}
+.comment-button{
+  margin-top:.5rem;
+  background-color:red;
+  color:white;
+  padding:10px;
+}
 
 .card{
 
