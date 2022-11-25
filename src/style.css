@@ -255,3 +255,7 @@ body {
 .non-show {
   display: none;
 }
+
+#about:hover {
+  cursor: pointer;
+}
