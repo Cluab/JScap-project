@@ -3,5 +3,6 @@ export default class Counters {
     const items = document.getElementById('show-cards');
     const directChildren = items.children.length;
     document.getElementById('itemcount').innerText = directChildren;
+    return directChildren;
   };
 }

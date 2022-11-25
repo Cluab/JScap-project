@@ -36,7 +36,7 @@ export default class AddMovies {
 
     // assigning api variables to deferent elements
 
-    showImg.src = `${list.image.medium}`;
+    showImg.src = list.image.medium;
     showImg.alt = 'show image';
     title.innerText = list.name;
     let sum = list.summary;
