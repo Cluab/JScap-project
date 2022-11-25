@@ -57,11 +57,11 @@ After you're finished please remove all the comments and instructions!
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [your_project_name] <a name="about-project"></a>
+# 📖 [JScap-project] <a name="JScap-project"></a>
 
-> Describe your project in 1 or 2 sentences.
+> this project is made by two collaborative Ibrahim & Mose, where we demonstrate our javascript knowledge
 
-**[your_project__name]** is a...
+**[JScap-project]** a Website that hosts your favorite T.V show where you can share comments and like with people from all over the world by the help of our awesome APIs
 
 ## 🛠 Built With <a name="built-with"></a>
 
