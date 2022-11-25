@@ -1,4 +1,5 @@
 import AddMovies from './add.js';
+
 export default class Get {
   static getShows = async () => {
     // assignees the method to GET

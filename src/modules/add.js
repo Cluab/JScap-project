@@ -1,5 +1,5 @@
-import popMovies from "./popup.js";
-import PostComments from "./postcomments.js";
+import popMovies from './popup.js';
+
 export default class AddMovies {
   constructor(show, likes) {
     this.show = show;
@@ -7,7 +7,7 @@ export default class AddMovies {
   }
 
   // this function is for adding shows to the website
-  static addlist = (list) => {
+  static addlist = (list, id) => {
     // creating html elements and getting the section id
     const shows = document.getElementById('show-cards');
     const container = document.createElement('div');
@@ -54,11 +54,11 @@ export default class AddMovies {
     container.appendChild(cardHouse);
     shows.appendChild(container);
 
-  // eventListener for pop up window
+    // eventListener for pop up window
 
-  button.addEventListener('click', (e) =>{
-    e.preventDefault();
-    popMovies.popWrap(list.image.medium,list.name,sum,id);
-  })
+    button.addEventListener('click', (e) => {
+      e.preventDefault();
+      popMovies.popWrap(list.image.medium, list.name, sum, id);
+    });
   };
 }

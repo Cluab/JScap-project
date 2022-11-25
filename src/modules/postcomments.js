@@ -8,8 +8,8 @@ export default class PostComments{
         body: `{"item_id":${id},"username":${username},"comment":${comment}}`
       };
       
-      fetch('https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/BQIepMoeO6ImEkauJ2th/comments', options)
-        .then(response => response.json());
+      fetch('https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/BQIepMoeO6ImEkauJ2th/comments/id', options)
+        .then(response => response.json())
    }
     
 }
