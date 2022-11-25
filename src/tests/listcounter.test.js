@@ -6,8 +6,7 @@ import Counters from '../modules/counters.js';
 
 describe('test-1', () => {
   // added some Dom minaplaytion for our tests
-  document.body.innerHTML =
-    '<section> <span id="itemcount"></span></section><section id="show-cards"> </section>';
+  document.body.innerHTML = '<section> <span id="itemcount"></span></section><section id="show-cards"> </section>';
   // added an object array to mimic api fetch respond.
   const mockResponse = [
     {

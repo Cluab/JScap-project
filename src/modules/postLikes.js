@@ -8,16 +8,14 @@ export default class PostLikes {
 
     await fetch(
       'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/BQIepMoeO6ImEkauJ2th/likes',
-      GET
+      GET,
     )
       .then((response) => response.json())
-      .then((data) =>
-        data.forEach((showsLikes) => {
-          if (showsLikes.item_id - 1000 === id - 1000) {
-            num.innerText = showsLikes.likes;
-          }
-        })
-      )
+      .then((data) => data.forEach((showsLikes) => {
+        if (showsLikes.item_id - 1000 === id - 1000) {
+          num.innerText = showsLikes.likes;
+        }
+      }))
       .catch(new Error('refresh page'));
   };
   // changing the color of the like icon when clicked
@@ -39,7 +37,7 @@ export default class PostLikes {
 
     await fetch(
       'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/BQIepMoeO6ImEkauJ2th/likes',
-      options
+      options,
     ).catch(new Error('refresh page'));
 
     const GET = {
@@ -49,16 +47,14 @@ export default class PostLikes {
 
     await fetch(
       'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/BQIepMoeO6ImEkauJ2th/likes',
-      GET
+      GET,
     )
       .then((response) => response.json())
-      .then((data) =>
-        data.forEach((showsLikes) => {
-          if (Number(showsLikes.item_id) === Number(id)) {
-            num.innerText = showsLikes.likes;
-          }
-        })
-      )
+      .then((data) => data.forEach((showsLikes) => {
+        if (Number(showsLikes.item_id) === Number(id)) {
+          num.innerText = showsLikes.likes;
+        }
+      }))
       .catch(new Error('refresh page'));
   };
 }
