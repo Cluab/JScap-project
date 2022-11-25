@@ -13,7 +13,7 @@
 
 ### Live demo
 
-[loading]()
+[loading...]()
 
 ## Authors
 
