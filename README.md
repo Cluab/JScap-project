@@ -11,6 +11,13 @@
 - Technologies used(VS code, webpack, Git & Github)
 
 
+
+### (Kanban board)
+
+[Kanban board](https://github.com/Cluab/JScap-project/projects/1)
+
+
+
 ### Live demo
 
 [JScap-project](https://cluab.github.io/JScap-project/dist/#)
