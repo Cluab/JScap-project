@@ -11,24 +11,24 @@
 <body>
   <ul class="nav justify-content-center">
     <li class="nav-item">
-      <a class="nav-link active" aria-current="page" href="#">Home</a>
+      <a class="nav-link active pointer-event" aria-current="page" href="#" id="home">Home</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="#">Contact-Us</a>
+      <a class="nav-link active pointer-event" href="#" id="contact">Contact-Us</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link">About-Us</a>
+      <a class="nav-link active pointer-event" id="about">About-Us</a>
     </li>
   </ul>
-
   <section class="main-content">
     <p>Get The Best of new movies</p>
     <p>On the globe</p>
-
+<p >number of shows:<span id="itemcount"></span></p>
   </section>
 
 
-  <section class="card-section" id="show-cards"></section>
+  <section class="card-section" id="show-cards" >
+  </section>
   
   <section class="popup-coments-wrapper">
     <div class="popup-close">X</div>
@@ -57,7 +57,7 @@
       </div>
     </div>    
   </section>
-  <section class="about">
+  <section class="about" id="about-section">
     <div class="about-us">
       <p class="para-about">
       We are the creative and amazing site for streaming the movies.
@@ -84,7 +84,7 @@
       </div>
     </div>
   </section>
-  <section class="contact-us">
+  <section class="contact-us" id="contact-section">
     <p>You can kindly contact us on the bellow plat forms</p>
     <div class="profiles">
       <div class="people">

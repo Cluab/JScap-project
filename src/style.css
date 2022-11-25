@@ -1,244 +1,257 @@
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300;500&family=Rubik+Glitch&display=swap');
-body{
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    font-family:'Dosis', sans-serif;
-    background-image: url(./items/noom-peerapong-2uwFEAGUm6E-unsplash\ 1.png);
-    background-size: cover;
-    background-repeat: no-repeat;
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Dosis', sans-serif;
+  background-image: url(./items/noom-peerapong-2uwFEAGUm6E-unsplash\ 1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-.nav{
-    background-color: rgba(0, 0, 0, 0.876);
-    padding: 1rem;
-    position: fixed;
-    width: 100%;
-    z-index: 100;
-    margin-bottom: 2rem;
-    border-radius: 4px;
-    border: solid 2px re;
-
-
-}
-.nav-item a{
-    color: white;
-    transition: ease-in-out .5s;
-    font-size: 20px;
-}
-.nav-item a:hover{
-    color: red;
+.nav {
+  background-color: rgba(0, 0, 0, 0.876);
+  padding: 1rem;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  margin-bottom: 2rem;
+  border-radius: 4px;
 }
 
-.main-content{
-    margin-top: 8rem;
-    text-align: center;
-    padding: 2rem;
+.nav-item a {
+  color: white;
+  transition: ease-in-out 0.5s;
+  font-size: 20px;
 }
-.main-content p{
-    font-family: 'Rubik Glitch', cursive;
-    text-align: center;
-    margin-left: 2rem;
-    font-size: 3rem;
-    text-transform: uppercase;
-    background-image: linear-gradient(
+
+.main-content {
+  margin-top: 8rem;
+  text-align: center;
+  padding: 2rem;
+}
+
+.main-content p {
+  font-family: 'Rubik Glitch', cursive;
+  text-align: center;
+  margin-left: 2rem;
+  font-size: 3rem;
+  text-transform: uppercase;
+  background-image:
+    linear-gradient(
       -225deg,
       white 0%,
       black 12%,
       red 29%,
-      #A15F46 67%,
+      #a15f46 67%,
       white 80%,
       white 100%
     );
-    background-size: auto auto;
-    background-clip: border-box;
-    background-size: 200% auto;
-    color: #fff;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: textclip 6s linear infinite;
-    display: inline-block;
+  background-size: 200% auto;
+  color: #fff;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 6s linear infinite;
+  display: inline-block;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
   }
-  
-  @keyframes textclip {
-    to {
-      background-position: 200% center;
-    }
-  }
-.popup-coments-wrapper{
-    background: rgba(0, 0, 0, 0.5);
-    position:fixed;
-    top: 0;
-    left:0;
-    width:100%;
-    height: 100%;
-    z-index:200;
-}
-.popup-close{
-    position: absolute;
-    top: 5%;
-    z-index: 500;
-    left: 75%;
-    font-size:30px;
-    font-weight:bold;
-    color: black;
 }
 
-.pop-up-contents{
-    max-width:800px;
-    margin: 2% auto;
-    padding: 20px;
-    position: relative;
+.popup-coments-wrapper {
+  display: none;
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 200;
 }
 
+.popup-close {
+  position: absolute;
+  top: 5%;
+  z-index: 500;
+  left: 75%;
+  font-size: 30px;
+  font-weight: bold;
+  color: black;
+}
 
-.card-section{
-    display: grid;
-    grid-template-columns: 33.3% 33.3% 33.3%;
-    grid-template-rows: 50% 50%;
-    gap:10px;
-    justify-content: space-between;
-    padding: 3rem;
-    margin-top: .5rem;
-    margin-bottom: 12rem;
+.pop-up-contents {
+  max-width: 800px;
+  margin: 2% auto;
+  padding: 20px;
+  position: relative;
+}
+
+.card-section {
+  display: grid;
+  grid-template-columns: 33.3% 33.3% 33.3%;
+  grid-template-rows: 50% 50%;
+  gap: 10px;
+  justify-content: space-between;
+  padding: 3rem;
+  margin-top: 0.5rem;
+  margin-bottom: 12rem;
 }
 
 .card-text {
-    max-height: 300px;
-    white-space: nowrap;
+  max-height: 300px;
+  white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
-.likes p{
-    display: flex;
-    flex-direction: row;
-    gap: 4px;
-}
-.btn{
-    background: red;
-    color: white;
-}
-.btn:hover{
-    background: white;
-    color: red;
-}
-.footer{
-    margin-bottom: auto;
-    position: fixed;
-    bottom: 0%;
-    background-color: black;
-    width: 100%;
-    padding: .5rem;
+.likes p {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
 }
 
-.about{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    padding-bottom: 12rem;
-    background-color: white;
-    margin-bottom: 8rem;
+.btn {
+  background: red;
+  color: white;
 }
-.about-us{
-    padding: 8rem;
-    border: solid black 2px;
-    border-radius: 6px;
-    margin: 3rem;
-    text-align: center;
-    font-family: inherit;
-    font-size: 30px;
 
+.btn:hover {
+  background: white;
+  color: red;
 }
-.about-team{
-    font-family: 'Rubik Glitch', cursive;
-    text-align: center;
-    /* margin-left: 2rem; */
-    font-size: 3rem;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    text-transform: uppercase;
-    background-image: linear-gradient(
+
+.footer {
+  margin-bottom: auto;
+  position: fixed;
+  bottom: 0%;
+  background-color: black;
+  width: 100%;
+  padding: 0.5rem;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-bottom: 12rem;
+  background-color: white;
+  margin-bottom: 8rem;
+}
+
+.about-us {
+  padding: 8rem;
+  border: solid black 2px;
+  border-radius: 6px;
+  margin: 3rem;
+  text-align: center;
+  font-family: inherit;
+  font-size: 30px;
+}
+
+.about-team {
+  font-family: 'Rubik Glitch', cursive;
+  text-align: center;
+
+  /* margin-left: 2rem; */
+  font-size: 3rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  background-image:
+    linear-gradient(
       -225deg,
       white 0%,
       black 12%,
       red 29%,
-      #A15F46 67%,
+      #a15f46 67%,
       white 80%,
       white 100%
     );
-    background-size: auto auto;
-    background-clip: border-box;
-    background-size: 200% auto;
-    color: #fff;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: textclip 6s linear infinite;
-    display: inline-block;
+  background-size: 200% auto;
+  color: #fff;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 6s linear infinite;
+  display: inline-block;
 }
 
-.cards-bio{
-    position: absolute;
-    display: flex;
-    flex-direction: row;
-    gap: 40px;
-    top: 245%;
-    left: 27%;
+.cards-bio {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  top: 245%;
+  left: 27%;
 }
-.bio-card{
-    padding: 3rem;
 
+.bio-card {
+  display: none;
+  padding: 3rem;
 }
-.contact-us{
-    background-image: url(./items/contact-back.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 4rem;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    border-bottom: 2px solid red;
-    font-size: 40px;
-}
-.contact-us > p{
-    text-align: center;
-    color: white;
-    font-weight: 40px;
-    letter-spacing: 4px;
-}
-.profiles{
-    display: flex;
-    flex-direction: row;
-    font-size: 20px;
-    padding: 3rem;
-    justify-content: space-evenly;
-    align-items: center;
-}
-.people{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-.people a{
-    text-decoration: none;
-    color: red;
-    font-weight: bold;
-    text-decoration: underline;
-}
-.people p{
-color: white;
-}
-.profile-name{
-    color: white;
-    font-weight: bold;
-    font-size: 25px;
-    
-}
-.footer > p{
-    color: white;
-    text-align: center;
-    font-size: 20px;
 
+.contact-us {
+  background-image: url(./items/contact-back.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-bottom: 2px solid red;
+  font-size: 40px;
+}
+
+.contact-us > p {
+  text-align: center;
+  color: white;
+  letter-spacing: 4px;
+}
+
+.profiles {
+  display: flex;
+  flex-direction: row;
+  font-size: 20px;
+  padding: 3rem;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.people {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.people a {
+  color: red;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.nav-item a:hover {
+  color: red;
+}
+
+.people p {
+  color: white;
+}
+
+.profile-name {
+  color: white;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.footer > p {
+  color: white;
+  text-align: center;
+  font-size: 20px;
+}
+
+.non-show {
+  display: none;
 }
