@@ -58,4 +58,4 @@ Give a ⭐️ if you like this project!
 
 This project is [MIT](./LICENSE.md) licensed.
 
-Ps.(The email image that I received from student success has been added to the items folder in the src folder under the name of [Screenshot](src/items/Screenshot (44).png).)
+Ps.The email image that I received from student success has been added to the items folder in the src folder under the name of [Screenshot](src/items/Screenshot (44).png).
