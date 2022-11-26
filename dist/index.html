@@ -11,25 +11,93 @@
 <body>
   <ul class="nav justify-content-center">
     <li class="nav-item">
-      <a class="nav-link active" aria-current="page" href="#">Home</a>
+      <a class="nav-link active pointer-event" aria-current="page" href="#" id="home">Home</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="#">Contact-Us</a>
+      <a class="nav-link active pointer-event" href="#" id="contact">Contact-Us</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link">About-Us</a>
+      <a class="nav-link active pointer-event" id="about">About-Us</a>
     </li>
   </ul>
-
   <section class="main-content">
-    <p>Get The Best of new movies</p>
+    <p>Get The Best new Shows</p>
     <p>On the globe</p>
-
+<p >number of shows:<span id="itemcount"></span></p>
   </section>
 
 
-  <section class="card-section" id="show-cards"></section>
-  
+  <section class="card-section" id="show-cards" >
+  </section>
+
+  <section class="card-section">
+    <div class="card" style="width: 100%;">
+      <img src="..." class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <div class="likes">
+          <p><i class="fa-regular fa-heart"></i>likes <span>0</span></p>
+        </div>
+        <a href="#" class="btn btn-comments">Comments</a>
+      </div>
+    </div>
+    <div class="card" style="width: 100%;">
+      <img src="..." class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <div class="likes">
+          <p><i class="fa-regular fa-heart"></i>likes <span>0</span></p>
+        </div>
+        <a href="#" class="btn btn-comments">Comments</a>
+      </div>
+    </div>
+    <div class="card" style="width: 100%;">
+      <img src="..." class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <div class="likes">
+          <p><i class="fa-regular fa-heart"></i>likes <span>0</span></p>
+        </div>
+        <a href="#" class="btn btn-comments">Comments</a>
+      </div>
+    </div>
+    <div class="card" style="width: 100%;">
+      <img src="..." class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <div class="likes">
+          <p><i class="fa-regular fa-heart"></i>likes <span>0</span></p>
+        </div>
+        <a href="#" class="btn btn-comments">Comments</a>
+      </div>
+    </div>
+    <div class="card" style="width: 100%;">
+      <img src="..." class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <div class="likes">
+          <p><i class="fa-regular fa-heart"></i>likes <span>0</span></p>
+        </div>
+        <a href="#" class="btn btn-comments">Comments</a>
+      </div>
+    </div>
+    <div class="card" style="width: 100%;">
+      <img src="..." class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <div class="likes">
+          <p><i class="fa-regular fa-heart"></i>likes <span>0</span></p>
+        </div>
+        <a href="#" class="btn btn-comments">Comments</a>
+      </div>
+    </div>
+  </section>
   <section class="popup-coments-wrapper">
     <div class="popup-close">X</div>
     <div class="card pop-up-contents" style="width: 40rem;">
@@ -57,13 +125,12 @@
       </div>
     </div>    
   </section>
-  <section class="about">
+  <section class="about" id="about-section">
     <div class="about-us">
       <p class="para-about">
-      We are the creative and amazing site for streaming the movies.
-      the good thing about us is that you can just comment on one you
-      like you can even provide a like on our sites. you can always check for updates
-      and to let you know you can subscribe to our nes letter. king find the bio of the company members.
+      We are the creative and amazing site for streaming shows
+      you can comment and add
+      likes to shows that we provide.also check for updates from other users provided with the support of our amazing APIs
     </p>
       <p class="about-team">Our Team</p>
     </div>
@@ -79,13 +146,13 @@
         <div class="card-body ">
           <h5 class="card-title">Ibrahim suhali alyousef</h5>
           <p class="card-text">Fullstack developer at microverse</p>
-          <a href="#" class="btn btn-primary">check resume</a>
+          <a href="https://github.com/Cluab" class="btn btn-primary">check resume</a>
         </div>
       </div>
     </div>
   </section>
-  <section class="contact-us">
-    <p>You can kindly contact us on the bellow plat forms</p>
+  <section class="contact-us" id="contact-section">
+    <p>You can contact us on the bellow plat forms</p>
     <div class="profiles">
       <div class="people">
         <p class="profile-name">Moise Byiringiro</p>
