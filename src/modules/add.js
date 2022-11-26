@@ -1,6 +1,12 @@
+import popMovies from './popup.js';
 import PostLikes from './postLikes.js';
 
 export default class AddMovies {
+  constructor(show, likes) {
+    this.show = show;
+    this.likes = likes;
+  }
+
   // this function is for adding shows to the website
   static addlist = (list, id) => {
     // creating html elements and getting the section id
@@ -54,11 +60,17 @@ export default class AddMovies {
     container.appendChild(cardHouse);
     shows.appendChild(container);
 
-    // added like feature to specific show
-    PostLikes.likeupdate(id, num);
-    icon.addEventListener('click', () => {
-      PostLikes.likecolor(icon);
+    // eventListener for pop up window
+
+    button.addEventListener('click', (e) => {
+      e.preventDefault();
+      popMovies.popWrap(list.image.medium, list.name, sum, id);
+      // added like feature to specific show
       PostLikes.likeupdate(id, num);
+      icon.addEventListener('click', () => {
+        PostLikes.likecolor(icon);
+        PostLikes.likeupdate(id, num);
+      });
     });
-  };
+  }
 }
