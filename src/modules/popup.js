@@ -77,7 +77,7 @@ export default class popMovies {
       e.preventDefault();
       const username = document.querySelector('#exampleFormControlInput1').value;
       const comment = document.querySelector('#exampleFormControlTextarea1').value;
-      postComments.postComment(1, username, comment);
+      postComments.postComment(id, username, comment);
     });
   };
 }
